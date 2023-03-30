@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "3 Programming Languages you should Learn",
+    "cover_image": "https://images.unsplash.com/photo-1483817101829-339b08e8d83f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1104&q=80",
+    "read_time": 5,
+    "author_name": "sazzad Hossain",
+    "date": "Mar 15(15 days Ago)",
+    "author_image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "hashTag": "#programming #python"
+  },
+  {
+    "id": 2,
+    "title": "The Evolution of Computer Hardware",
+    "cover_image": "https://plus.unsplash.com/premium_photo-1663012910830-d1cc3d89f190?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "read_time": 7,
+    "author_name": "Sumayia Khan",
+    "date": "Feb 24(44 days Ago)",
+    "author_image": "https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZmFjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "hashTag": "#computer #abacus"
+  },
+  {
+    "id": 3,
+    "title": "AI and Machine Learning",
+    "cover_image": "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "read_time": 8,
+    "author_name": "Rakib Rayhan",
+    "date": "Jan 4(64 days Ago)",
+    "author_image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    "hashTag": "#Ai #Machine Learning"
+  },
+  {
+    "id": 4,
+    "title": "Cybersecurity ",
+    "cover_image": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "read_time": 4,
+    "author_name": "Jannat Shuchi",
+    "date": "Mar 19(11 days Ago)",
+    "author_image": "https://images.unsplash.com/photo-1601412436009-d964bd02edbc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
+    "hashTag": "#Cybar #Hacking"
+  }
+]
