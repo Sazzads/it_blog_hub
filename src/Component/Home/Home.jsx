@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import SingleBlog from '../SingleBlog/SingleBlog';
 
-const Home = ({handleWatchTime}) => {
-    const [movies,setMovies]=useState([])
+const Home = ({handleReadTime}) => {
+    const [blogs,setMovies]=useState([])
     useEffect(()=>{
         fetch("data.json")
         .then(res=>res.json())
@@ -11,10 +11,10 @@ const Home = ({handleWatchTime}) => {
 
     return (
         <div >
-            <div className="movie-container ">
+            <div className="blog-container ">
                 {
-                    movies.map((movie)=>(
-                       <SingleBlog key={movie.id} handleWatchTime={handleWatchTime} movie={movie}></SingleBlog>
+                    blogs.map((blog)=>(
+                       <SingleBlog key={blog.id} handleReadTime={handleReadTime} blog={blog}></SingleBlog>
                     ))
                 }
             </div>
