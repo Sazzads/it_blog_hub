@@ -8,6 +8,10 @@ header a {
     color: white;
     margin-left: 30px;
 }
-nav.header a:hover{
+.header a:hover{
     color: orange;
+}
+.header a{
+    margin-left: 20px;
+    color: black;
 }

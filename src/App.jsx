@@ -8,14 +8,16 @@ import Home from './Component/Home/Home';
 import SideBar from './Component/SideBar/SideBar';
 
 function App() {
-
+  const handleWatchTime=(time)=>{
+    console.log(time)
+  };
 
   return (
-    <div className="App">
+    <div className="App container">
       <Header></Header>
       <div className="main row ">
         <div className="home-container col-md-8">
-          <Home></Home>
+          <Home handleWatchTime={handleWatchTime}></Home>
         </div>
         <div className="side-cart col-md-4 card">
           <SideBar></SideBar>

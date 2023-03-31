@@ -2,6 +2,6 @@
     width: 100%;
     border-radius: 50px;
 }
-/* .read-time{
-    font-size: 1px;
-} */
+.pointer{
+    cursor: pointer;
+}

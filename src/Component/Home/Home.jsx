@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SingleBlog from '../SingleBlog/SingleBlog';
 
-const Home = () => {
+const Home = ({handleWatchTime}) => {
     const [movies,setMovies]=useState([])
     useEffect(()=>{
         fetch("data.json")
@@ -10,11 +10,11 @@ const Home = () => {
     },[])
 
     return (
-        <div>
-            <div className="movie-container">
+        <div >
+            <div className="movie-container ">
                 {
                     movies.map((movie)=>(
-                       <SingleBlog movie={movie}></SingleBlog>
+                       <SingleBlog key={movie.id} handleWatchTime={handleWatchTime} movie={movie}></SingleBlog>
                     ))
                 }
             </div>
