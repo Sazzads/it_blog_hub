@@ -47,7 +47,7 @@ const Home = ({ handleReadTime, handleTitleShow }) => {
 
 
     return (
-        <div className='row' >
+        <div className='row ' >
             <div className="blog-container col-md-8 ">
 
                 {
