@@ -1,4 +1,5 @@
 import React from 'react';
+import navImg from '../../images/nav_dp.jpg'
 import './Header.css'
 
 const Header = () => {
@@ -12,7 +13,7 @@ const Header = () => {
                         <a href="/blog">Blog</a>
                         <a href="/author">Author</a>
                         <a href="/about">About</a>
-                        <a href=""><img className='nav-image' src="../../../images/nav_dp.jpg" alt="" /></a>
+                        <a href=""><img className='nav-image' src={navImg} alt="image link is broken" /></a>
                     </div>
                 </div>
             </nav>
