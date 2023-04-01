@@ -1,30 +1,45 @@
 import React, { useEffect, useState } from 'react';
 import SideBar from '../SideBar/SideBar';
 import SingleBlog from '../SingleBlog/SingleBlog';
+import { ToastContainer, toast } from 'react-toastify';
 
-const Home = ({handleReadTime,handleTitleShow}) => {
-    const [blogs,setMovies]=useState([])
-    
+const Home = ({ handleReadTime, handleTitleShow }) => {
+    const [blogs, setMovies] = useState([])
 
-    useEffect(()=>{
+
+    useEffect(() => {
         fetch("data.json")
-        .then(res=>res.json())
-        .then(data=>setMovies(data))
-    },[]);
+            .then(res => res.json())
+            .then(data => setMovies(data))
+    }, []);
 
     const [bookmark, setBookmark] = useState([]);
-         handleTitleShow = (title) =>{
-           const newBookmark = [...bookmark, title]
-           setBookmark(newBookmark)
-         }
+    handleTitleShow = (title) => {
+        // const newBookmark = [...bookmark, title]
+        // setBookmark(newBookmark)
+        // handleTost()
+        if(bookmark.find(item=>item.id==title.id)){
+            const newBookmark = [...bookmark, title];
+            setBookmark(newBookmark);
+            handleTost()
+        }
+        else{
+            const newBookmark = [...bookmark, title];
+            setBookmark(newBookmark);
+        }
+    }
+
+    const handleTost = () => {
+        toast("you already have a book mark")
+    }
 
     const [time, setTime] = useState(0)
-    handleReadTime = (timezone) =>{
-        if(timezone){
+    handleReadTime = (timezone) => {
+        if (timezone) {
             const newTime = timezone + time;
             setTime(newTime)
         }
-        else{
+        else {
             setTime(time)
         }
     }
@@ -34,22 +49,24 @@ const Home = ({handleReadTime,handleTitleShow}) => {
     return (
         <div className='row' >
             <div className="blog-container col-8 ">
-                
+
                 {
-                    blogs.map((blog)=>(
-                       <SingleBlog  key={blog.id}  
-                       handleReadTime={handleReadTime}
-                       handleTitleShow={handleTitleShow}
-                       blog={blog} ></SingleBlog>
+                    blogs.map((blog) => (
+                        <SingleBlog key={blog.id}
+                            handleReadTime={handleReadTime}
+                            handleTitleShow={handleTitleShow}
+                            blog={blog} ></SingleBlog>
                     ))
                 }
             </div>
-            <div className='col-4'>
-                <h3 className='card'>time {time}</h3>
-                <h3> length {bookmark.length}</h3>
+            <div style={{ position: "sticky", height: "100%" ,top:"0px"}} className='col-4 card bg-light text-left position'>
+                <h4 className='card text-left'>Spent time on read : {time} mins </h4>
+                <h3 className='card m-1 text-left'> Bookmarked Blogs :  {bookmark.length}</h3>
+                <div className="div">
                 {
-                    bookmark.map(title => <SideBar title={title}></SideBar>)
+                    bookmark.map(title => <SideBar key={title.id} title={title}></SideBar>)
                 }
+                </div>
 
             </div>
         </div>

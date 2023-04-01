@@ -28,11 +28,13 @@ const SingleBlog = ({ blog, handleReadTime,handleTitleShow}) => {
                 <h3 className='text-start mt-2'>{blog.title}</h3>
                 <h6 className='text-start mt-2 fw-lighter'>{blog.hashTag}</h6>
                 <a onClick={() => handleReadTime(blog.read_time)} className='text-start mt-2 text-decoration-underline pointer'>Mark as read</a>
-
-
             </div>
         </div>
     );
 };
+
+
+
+
 
 export default SingleBlog;
