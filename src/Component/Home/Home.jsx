@@ -48,7 +48,7 @@ const Home = ({ handleReadTime, handleTitleShow }) => {
 
     return (
         <div className='row' >
-            <div className="blog-container col-8 ">
+            <div className="blog-container col-md-8 ">
 
                 {
                     blogs.map((blog) => (
@@ -59,7 +59,7 @@ const Home = ({ handleReadTime, handleTitleShow }) => {
                     ))
                 }
             </div>
-            <div style={{ position: "sticky", height: "100%" ,top:"0px"}} className='col-4 card bg-light text-left position'>
+            <div style={{ position: "sticky", height: "100%" ,top:"0px"}} className='col-md-4 card bg-light text-left position'>
                 <h4 className='card text-left'>Spent time on read : {time} mins </h4>
                 <h3 className='card m-1 text-left'> Bookmarked Blogs :  {bookmark.length}</h3>
                 <div className="div">
