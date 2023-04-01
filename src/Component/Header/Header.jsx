@@ -6,7 +6,7 @@ const Header = () => {
         <div>
             <nav className="navbar navbar-light bg-light">
                 <div className="container-fluid">
-                    <a className="navbar-brand">IT Blog Hub</a>
+                    <a className="navbar-brand">ITBlog Hub</a>
                     <div className="d-flex justify-content-between header">
                         <a href="/home">Home</a>
                         <a href="/blog">Blog</a>

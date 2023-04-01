@@ -30,7 +30,7 @@ const Home = ({ handleReadTime, handleTitleShow }) => {
     }
 
     const handleTost = () => {
-        toast("you already have a book mark")
+        toast("You Have Already Bookmarked This Blog")
     }
 
     const [time, setTime] = useState(0)

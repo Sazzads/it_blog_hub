@@ -9,6 +9,7 @@ import SideBar from './Component/SideBar/SideBar';
 import { Toast } from 'bootstrap';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Blog from './Component/Blog/Blog';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <div className="App container">
       <Header></Header>
        <Home  ></Home>
+       <Blog></Blog>
        <ToastContainer></ToastContainer>
         </div>
   )
